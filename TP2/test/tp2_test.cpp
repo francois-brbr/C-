@@ -1,14 +1,12 @@
 // Entetes //---------------------------------------------------------------------------------------
 #include "catch.hpp"
-
 #include <cmath>
-
-//#include <nuage.hpp>
+#include <nuage.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------------------ 1
-/*TEST_CASE ( "TP2_Nuage::Ajout" ) {
+TEST_CASE ( "TP2_Nuage::Ajout" ) {
  Nuage<Cartesien> n;
 
  REQUIRE ( n.size() == 0u );
@@ -19,10 +17,10 @@
  n.ajouter(Cartesien(34,56));
 
  REQUIRE ( n.size() == 4u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 2
-/*TEST_CASE ( "TP2_Nuage::Iterateurs" ) {
+TEST_CASE ( "TP2_Nuage::Iterateurs" ) {
  Polaire p1(12,34);
  Polaire p2(56,78);
  Polaire p3(90,12);
@@ -49,10 +47,10 @@
  REQUIRE ( t[2].getDistance() == Approx(p3.getDistance()) );
  REQUIRE ( t[3].getAngle() == Approx(p4.getAngle()) );
  REQUIRE ( t[3].getDistance() == Approx(p4.getDistance()) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 3
-/*TEST_CASE ( "TP2_Nuage::BarycentreCartesien_V1" ) {
+TEST_CASE ( "TP2_Nuage::BarycentreCartesien_V1" ) {
  Nuage<Cartesien> n;
 
  Cartesien p1(12,34);
@@ -80,7 +78,7 @@
 
  REQUIRE ( b3.getX() == Approx((p1.getX()+p2.getX()+p3.getX()+p4.getX())/4) );
  REQUIRE ( b3.getY() == Approx((p1.getY()+p2.getY()+p3.getY()+p4.getY())/4) );
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 4a
 /*TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V1" ) {
@@ -114,7 +112,7 @@
 }*/
 
 //----------------------------------------------------------------------------------------------- 4b
-/*TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V1" ) {
+TEST_CASE ( "TP2_Nuage::BarycentrePolaire_V1" ) {
  Nuage<Polaire> n;
 
  Polaire p1(12,34);
@@ -145,7 +143,7 @@
 
  REQUIRE ( b3.getDistance() == Approx((p1.getDistance()+p2.getDistance()
                                       +p3.getDistance()+p4.getDistance())/4) );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 5
 /*TEST_CASE ( "TP2_Nuage::BarycentreCartesien_V2" ) {
